@@ -5,7 +5,7 @@ const ComingSoon = () => {
         <div className="h-full col-center gap-10">
           <img src="/images/logo.webp" alt="logo" className="entrance-logo" />
           <div className="text-wrapper">
-            <h3 className="gradiant-title">
+            <h3 className="gradient-title">
               Coming <br></br> May 2026 <br /> 2026
             </h3>
           </div>

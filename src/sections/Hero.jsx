@@ -1,4 +1,4 @@
-
+import ComingSoon from './ComingSoon'
 
 const Hero = () => {
   return (
@@ -20,6 +20,7 @@ const Hero = () => {
         <img src="/images/big-hero-text.svg" alt="" className="overlay-logo" />
 
       </div>
+      <ComingSoon></ComingSoon>
     </section>
   )
 }

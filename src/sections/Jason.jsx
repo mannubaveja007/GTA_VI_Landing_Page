@@ -15,7 +15,9 @@ const Jason = () => {
                     end : '10% center',
                     scrub : 2,
                 }
-            }).to('.first-vd' , {opacity : 0 , ease : 'power1.inOut' , duration  : 1});
+            })
+            .to('.jason', { opacity: 1, duration: 1, ease: 'power1.inOut' })
+            .to('.first-vd' , {opacity : 0 , ease : 'power1.inOut' , duration  : 1}, "<");
             gsap.to('.jason .img-box' , {
                 scrollTrigger : {
                     trigger : '.jason',

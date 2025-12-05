@@ -7,7 +7,7 @@ import { useRef } from "react"
 const PostCard = () => {
     const videoref = useRef(null);
     useGSAP(()=>{
-        gsap.timeline({
+        const tl = gsap.timeline({
             scrollTrigger : {
                 trigger : '.post-card',
                 start : 'top center',
@@ -15,7 +15,7 @@ const PostCard = () => {
                 scrub : true,
             }
         })
-        // .to('.post-card video', { opacity: 1, duration: 1, ease: 'power1.inOut' })
+        
 
         videoref.current.onloadedmetadata = () => {
             tl.to(videoref.current , {currentTime : videoref.current.duration , ease : 'power1.inOut' , duration : 2},"<");
